@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PPCRental.Models;
 
 namespace PPCRental.Controllers
 {
     public class HomeController : Controller
     {
+        PPCRentalDBEntities model = new PPCRentalDBEntities();
+
         public ActionResult Index()
         {
-            return View();
+            var property = model.PROPERTies.ToList();
+            return View(property);
         }
 
         public ActionResult About()
@@ -26,5 +30,14 @@ namespace PPCRental.Controllers
 
             return View();
         }
+        [HttpGet]
+        public ActionResult Search(string text)
+        {
+            var property= model.PROPERTies.ToList().Where(x => x.PropertyName.Contains(text)
+                || x.Content.Contains(text) || x.Price.ToString().Contains(text));
+            return View(property);
+
+        }
+
     }
 }

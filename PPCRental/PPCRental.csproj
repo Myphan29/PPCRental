@@ -162,6 +162,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PropertyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +224,16 @@
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
     <Content Include="Images\3.jpeg" />
+    <Content Include="Images\IMG_1592-stamp.jpg" />
+    <Content Include="Images\PIS3280-Edit-stamp.jpg" />
+    <Content Include="Images\PIS3611.jpg" />
+    <Content Include="Images\PIS_4622-Edit.jpg" />
+    <Content Include="Images\PIS_6656-Edit-stamp.jpg" />
+    <Content Include="Images\PIS_6706-Edit-stamp.jpg" />
+    <Content Include="Images\PIS_7319-Edit-stamp.jpg" />
+    <Content Include="Images\PIS_7389-Edit-stamp.jpg" />
+    <Content Include="Images\PIS_7432-Edit-stamp.jpg" />
+    <Content Include="Images\sunshine-benthanh-cityhome-10-stamp.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Model1.edmx">
@@ -279,6 +290,8 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Property\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
