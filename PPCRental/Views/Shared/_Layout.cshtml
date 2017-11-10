@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!--Start of NavBar-->
+    <div id="navbar" class=" container body-content navbar-fixed-top col-lg-7">
+        <ul>
+            <li><a href="#">PPC RENTAL</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">POST</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+        <!--Filter Project-->
+        <form class="navbar-form navbar-left" style="margin-top: -60px; margin-left: 550px" role="search" action="@Url.Action("Search", "Home")" method="get">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="tmp">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    <!--End of NavBar-->
+    <!--Footer-->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p style="padding-top: 100px">&copy; @DateTime.Now.Year - Marvellous Squad All right reserved</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
