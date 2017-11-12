@@ -1,4 +1,6 @@
-﻿@{
+﻿@model PagedList.IPagedList<PPCRental.Models.PROPERTY>
+@using PagedList.Mvc
+@{
     ViewBag.Title = "PPC Rental";
 }
 <div id="carousel-example-generic" class="carousel slide col-lg-12" data-ride="carousel">
@@ -50,21 +52,9 @@
         </p>
     </div>
 </div>
+<!--Display Property in Database-->
 <div class="row">
-    <!--Display Property in Database-->
-    @foreach (var item in Model)
-    {
-    <div class="col-sm-6 col-md-6">
-        <div class="thumbnail">
-
-            <img src="/Images/@item.Avatar" alt="@item.PropertyName">
-            <div class="caption">
-                <h3>@item.PropertyName</h3>
-                <p>@item.Content.Substring(0,60)...</p>
-                <p>Price: @item.Price VND</p>
-                <p><a href="/Property/Detail/@item.ID" class="btn btn-primary" role="button">Chi tiết</a> </p>
-            </div>
-        </div>
+    <div id="property">
+        @{Html.RenderAction("Getpaging", "Home", new { page = 1 });}
     </div>
-    }
 </div>
