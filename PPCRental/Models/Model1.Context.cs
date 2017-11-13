@@ -12,7 +12,7 @@ namespace PPCRental.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-        
+    
     public partial class PPCRentalDBEntities : DbContext
     {
         public PPCRentalDBEntities()
@@ -34,8 +34,5 @@ namespace PPCRental.Models
         public virtual DbSet<STREET> STREETs { get; set; }
         public virtual DbSet<USER> USERs { get; set; }
         public virtual DbSet<WARD> WARDs { get; set; }
-
-        
-        
     }
 }

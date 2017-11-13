@@ -16,9 +16,9 @@ namespace PPCRental.Controllers
 
         public ActionResult Index()
         {
-            //var property = model.PROPERTies.ToList();
-            //return View(property);
-            return View();
+            var property = model.PROPERTies.ToList();
+            return View(property);
+            //return View();
         }
         public PartialViewResult Getpaging(int? page)
         {
