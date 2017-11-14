@@ -470,7 +470,7 @@ header nav .login_btn:hover{
 }
 
 
-.listings ul.properties_list li .price{
+.listings ul.properties_list li.price{
     position: absolute;
     top: 10px;
     left: 10px;

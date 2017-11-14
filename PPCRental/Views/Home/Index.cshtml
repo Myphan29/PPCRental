@@ -1,4 +1,5 @@
-﻿
+﻿@model PagedList.IPagedList<PPCRental.Models.PROPERTY>
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,31 +9,13 @@
     <section class="listings">
         <div class="wrapper">
             <ul class="properties_list">
-                
-                    @foreach (var item in Model)
-                    {
-                        <li>
-
-                            <a href="#">
-                                <img src="~/Images/@item.Avatar" alt="" title="" class="property_img" />
-                            </a>
-                            <span class="price">$2500</span>
-                            <div class="property_details">
-                                <h1>
-                                    <a href="#">Fuisque dictum tortor at purus libero</a>
-                                </h1>
-                                <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
-                            </div>
-                        </li>
-                    }
-                
-                
+                <div id="property">
+                    @{Html.RenderAction("Getpaging", "Home", new { page = 1 });}
+                </div>
             </ul>
-            <div class="more_listing">
-                <a href="#" class="more_listing_btn">View More Listings</a>
-            </div>
         </div>
-    </section>	<!--  end listing section  -->
+    </section>
 </body>
+
 
 

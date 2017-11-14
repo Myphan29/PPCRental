@@ -16,14 +16,14 @@ namespace PPCRental.Controllers
 
         public ActionResult Index()
         {
-            var property = model.PROPERTies.ToList();
-            return View(property);
-            //return View();
+            //var property = model.PROPERTies.ToList();
+            //return View(property);
+            return View();
         }
         public PartialViewResult Getpaging(int? page)
         {
             var property = model.PROPERTies.ToList();
-            int pageSize = 4;
+            int pageSize = 6;
             int pageNumber = (page ?? 1);
             return PartialView("_PartialViewProperty",property.ToPagedList(pageNumber,pageSize));
         }
