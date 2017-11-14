@@ -3,36 +3,122 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/css/styles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <!--Start of NavBar-->
-    <div id="navbar" class=" container body-content navbar-fixed-top col-lg-7">
-        <ul>
-            <li><a href="#">PPC RENTAL</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">POST</a></li>
-            <li><a href="#">ABOUT US</a></li>
-        </ul>
-        <!--Filter/Searcj Project-->
-        <form class="navbar-form navbar-left" style="margin-top: -60px; margin-left: 550px" role="search" action="@Url.Action("Search", "Home")" method="get">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search" name="text">
+    <section class="hero">
+        <header>
+            <div class="wrapper">
+                <a href="#"><img src="~/img/logo.png" class="logo" alt="" title="" /></a>
+                <a href="#" class="hamburger"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Buy</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="#" class="login_btn">Login</a>
+                </nav>
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
-        </form>
-    </div>
+        </header><!--  end header section  -->
+
+        <section class="caption">
+            <h2 class="caption">Find You Dream Home</h2>
+            <h3 class="properties">Appartements - Houses - Mansions</h3>
+        </section>
+    </section>     <!--  end hero section  -->
     <!--End of NavBar-->
+    <section class="search">        <!--  start of search section  -->
+        <div class="wrapper">
+            <form action="#" method="post">
+                <input type="text" id="search" name="search" placeholder="Searching for..." autocomplete="off" />
+                <input type="submit" id="submit_search" name="submit_search" />
+            </form>
+            <a href="#" class="advanced_search_icon" id="advanced_search_btn"></a>
+        </div>
+
+        <div class="advanced_search">
+            <div class="wrapper">
+                <span class="arrow"></span>
+                <form action="#" method="post">
+                    <div class="search_fields">
+                        <input type="text" class="float" id="check_in_date" name="check_in_date" placeholder="Check In Date" autocomplete="off">
+
+                        <hr class="field_sep float" />
+
+                        <input type="text" class="float" id="check_out_date" name="check_out_date" placeholder="Check Out Date" autocomplete="off">
+                    </div>
+                    <div class="search_fields">
+                        <input type="text" class="float" id="min_price" name="min_price" placeholder="Min. Price" autocomplete="off">
+
+                        <hr class="field_sep float" />
+
+                        <input type="text" class="float" id="max_price" name="max_price" placeholder="Max. price" autocomplete="off">
+                    </div>
+                    <input type="text" id="keywords" name="keywords" placeholder="Keywords" autocomplete="off">
+                    <input type="submit" id="submit_search" name="submit_search" />
+                </form>
+            </div>
+        </div><!--  end advanced search section  -->
+    </section><!--  end search section  -->
     <!--Footer-->
-    <div class="container body-content">
+    <div class="">
         @RenderBody()
-        <hr />
         <footer>
-            <p style="padding-top: 100px">&copy; @DateTime.Now.Year - Marvellous Squad All right reserved</p>
-        </footer>
+            <div class="wrapper footer">
+                <ul>
+                    <li class="links">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="links">
+                        <ul>
+                            <li><a href="#">Appartements</a></li>
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Villas</a></li>
+                            <li><a href="#">Mansions</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="links">
+                        <ul>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">Los Anglos</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Washington</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="about">
+                        <p>La Casa is real estate minimal html5 website template, designed and coded by pixelhint, tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum</p>
+                        <ul>
+                            <li><a href="http://facebook.com/pixelhint" class="facebook" target="_blank"></a></li>
+                            <li><a href="http://twitter.com/pixelhint" class="twitter" target="_blank"></a></li>
+                            <li><a href="http://plus.google.com/+Pixelhint" class="google" target="_blank"></a></li>
+                            <li><a href="#" class="skype"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyrights wrapper">
+                Copyright © 2015 <a href="http://pixelhint.com" target="_blank" class="ph_link" title="Download more free Templates">Pixelhint.com</a>. All Rights Reserved.
+            </div>
+        </footer><!--  end footer  -->
+        <hr />
     </div>
 
     @Scripts.Render("~/bundles/jquery")

@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -223,9 +225,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\PagedList.css" />
-    <Content Include="css\styles.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\responsive.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\lato-bold.svg" />
+    <Content Include="fonts\lato-regular.svg" />
+    <Content Include="fonts\p22_corinthia.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\1.jpg" />
@@ -241,6 +248,22 @@
     <Content Include="Images\PIS_7389-Edit-stamp.jpg" />
     <Content Include="Images\PIS_7432-Edit-stamp.jpg" />
     <Content Include="Images\sunshine-benthanh-cityhome-10-stamp.jpg" />
+    <Content Include="img\advanced_search_active.png" />
+    <Content Include="img\advanced_search_hover.png" />
+    <Content Include="img\advanced_search_inactive.png" />
+    <Content Include="img\calendar_icon.png" />
+    <Content Include="img\close_menu_icon.png" />
+    <Content Include="img\hamburger_icon.png" />
+    <Content Include="img\hero.jpg" />
+    <Content Include="img\hero_small.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\property_1.jpg" />
+    <Content Include="img\property_2.jpg" />
+    <Content Include="img\property_3.jpg" />
+    <Content Include="img\search_arrow.png" />
+    <Content Include="img\social_media.png" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Model1.edmx">
@@ -260,6 +283,15 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="fonts\lato-bold.eot" />
+    <Content Include="fonts\lato-bold.ttf" />
+    <Content Include="fonts\lato-bold.woff" />
+    <Content Include="fonts\lato-regular.eot" />
+    <Content Include="fonts\lato-regular.ttf" />
+    <Content Include="fonts\lato-regular.woff" />
+    <Content Include="fonts\p22_corinthia.eot" />
+    <Content Include="fonts\p22_corinthia.ttf" />
+    <Content Include="fonts\p22_corinthia.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
