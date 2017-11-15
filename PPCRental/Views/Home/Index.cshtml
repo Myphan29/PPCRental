@@ -1,12 +1,142 @@
 ﻿@model PagedList.IPagedList<PPCRental.Models.PROPERTY>
 @using PagedList.Mvc;
 @{
-    ViewBag.Title = "Index";
+   
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using PPCRental.Models;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="pixelhint.com">
+    <meta name="description" content="La casa free real state fully responsive html5/css3 home page website template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/responsive.css">
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/main.js"></script>
+</head>
 <body>
+
     <section class="listings">
+        <div class="wrapper">
+            <ul class="properties_list">
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_1.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$2500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_2.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$1000</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_3.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_1.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$2500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_2.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$1000</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_3.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_1.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$2500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_2.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$1000</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="~/img/property_3.jpg" alt="" title="" class="property_img" />
+                    </a>
+                    <span class="price">$500</span>
+                    <div class="property_details">
+                        <h1>
+                            <a href="#">Fuisque dictum tortor at purus libero</a>
+                        </h1>
+                        <h2>2 kitchens, 2 bed, 2 bath... <span class="property_size">(288ftsq)</span></h2>
+                    </div>
+                </li>
+            </ul>
+            <div class="more_listing">
+                <a href="#" class="more_listing_btn">View More Listings</a>
+            </div>
+        </div>
+    </section>	<!--  end listing section  -->
+    @*<section class="listings">
         <div class="wrapper">
             <ul class="properties_list">
                 <div id="property">
@@ -14,8 +144,12 @@
                 </div>
             </ul>
         </div>
-    </section>
+    </section>*@
+
+
 </body>
+</html>
+
 
 
 

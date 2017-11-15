@@ -122,7 +122,10 @@ h5, h6          { font-weight: bolder }
 header{
     width: 100%;
     height: 100px;
-    background: rgba(28, 54, 85, .2);
+    background: grey;
+    opacity:0.5;
+    position: absolute;
+    z-index: 1;
 }
 
 header .logo{
@@ -201,8 +204,15 @@ header nav .login_btn:hover{
 
 
 
-/*  Hero Section  */
-
+/*  Hero Section && something interesting xD - Kangz */
+.hero-mvls {
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 .hero{
     width: 100%;
     height: 900px;
@@ -254,7 +264,7 @@ header nav .login_btn:hover{
 .search{
     width: 100%;
     height: 100px;
-    background: #bfd9f2;
+    background: #323232;
     position: relative;
 }
 
@@ -267,7 +277,7 @@ header nav .login_btn:hover{
     outline: none;
     margin: 0;
     padding: 0;
-    background: #bfd9f2;
+    background: #323232;
     color: #ffffff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -277,19 +287,19 @@ header nav .login_btn:hover{
 }
 
 .search #search::-webkit-input-placeholder{
-   color: #95badf;
+   color: #ffffff;
 }
 
 .search #search:-moz-placeholder{ 
-   color: #95badf;  
+   color: #ffffff;  
 }
 
 .search #search::-moz-placeholder{ 
-   color: #95badf;  
+   color: #ffffff;  
 }
 
 .search #search:-ms-input-placeholder{  
-   color: #95badf;  
+   color: #ffffff;  
 } 
 
 .search #submit_search{
@@ -329,7 +339,7 @@ header nav .login_btn:hover{
     position: absolute;
     top: 100px;
     left: 0;
-    background: #cbe0f4;
+    background: #323232;
     border-top: 1px solid #aac8e4;
     border-bottom: 1px solid #aac8e4;
     z-index: 9999;
@@ -357,7 +367,7 @@ header nav .login_btn:hover{
     margin: 0;
     padding: 0 20px;
     outline: none;
-    background: #cbe0f4;
+    background: #323232;
 }
 
 .search .advanced_search #check_in_date,
@@ -382,7 +392,7 @@ header nav .login_btn:hover{
     width: 1px;
     height: 60px;
     border: 0;
-    background: #aac8e4;
+    background: #323232;
     margin: 20px 0 0 0;
     padding: 0;
 }
@@ -395,7 +405,7 @@ header nav .login_btn:hover{
     margin: 0;
     padding: 0 20px;
     outline: none;
-    background: #cbe0f4;
+    background: #323232;
 }
 
 .search .advanced_search #check_in_date,
@@ -504,7 +514,7 @@ header nav .login_btn:hover{
 }
 
 .listings ul li .property_details{
-    width: 87.64705882352941%;
+    width: 100% /*97.64705882352941%*/;
     padding: 2.941176470588235% 5.882352941176471% 4.117647058823529% 5.882352941176471%;
     border-bottom: 1px solid #f2f1f1;
     border-left: 1px solid #f2f1f1;
@@ -593,7 +603,7 @@ header nav .login_btn:hover{
 /*  footer  */
 footer{
     padding-top: 100px;
-    background: #95badf;
+    background: #323232;
 }
 
 footer .footer > ul{
@@ -927,7 +937,13 @@ footer .copyrights a.ph_link{
 }
 
 
-@media (max-width:500px){
+@media (max-width: 500px){
+    .carousel-inner {
+      max-height: 224px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+}
     .hero .caption h2{
         font-size: 85px;
     }
