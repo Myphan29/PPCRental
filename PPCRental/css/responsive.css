@@ -455,15 +455,6 @@ header nav .login_btn:hover{
 } 
 
 
-
-
-
-
-
-
-
-
-
 /*  listings section  */
 .listings{
     padding: 100px 0;
@@ -481,6 +472,9 @@ header nav .login_btn:hover{
     position: relative;
     float: left;
     margin: 0 3.636363636363636% 3.636363636363636% 0;
+}
+.pagenumber{
+    clear:left;
 }
 
 .listings ul.properties_list li img.property_img{
@@ -515,6 +509,7 @@ header nav .login_btn:hover{
 
 .listings ul li .property_details{
     width: 100% /*97.64705882352941%*/;
+    height:170px;
     padding: 2.941176470588235% 5.882352941176471% 4.117647058823529% 5.882352941176471%;
     border-bottom: 1px solid #f2f1f1;
     border-left: 1px solid #f2f1f1;
@@ -535,10 +530,10 @@ header nav .login_btn:hover{
 .listings ul li .property_details h1{
     color: #666464;
     font-family: "lato-bold", Helvetica, Arial, sans-serif;
-    font-size: 16px!important;
+    font-size: 20px!important;
     font-weight: bold;
     margin-bottom: 5px;
-    line-height: 28px;
+    height: 50px;
 }
 
 .listings ul li .property_details h1 a{

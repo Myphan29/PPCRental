@@ -244,6 +244,16 @@
     <Content Include="img\hero.jpg" />
     <Content Include="img\hero_small.jpg" />
     <Content Include="img\logo1.png" />
+    <Content Include="img\property\IMG_1592-stamp.jpg" />
+    <Content Include="img\property\PIS3280-Edit-stamp.jpg" />
+    <Content Include="img\property\PIS3611.jpg" />
+    <Content Include="img\property\PIS_4622-Edit.jpg" />
+    <Content Include="img\property\PIS_6656-Edit-stamp.jpg" />
+    <Content Include="img\property\PIS_6706-Edit-stamp.jpg" />
+    <Content Include="img\property\PIS_7319-Edit-stamp.jpg" />
+    <Content Include="img\property\PIS_7389-Edit-stamp.jpg" />
+    <Content Include="img\property\PIS_7432-Edit-stamp.jpg" />
+    <Content Include="img\property\sunshine-benthanh-cityhome-10-stamp.jpg" />
     <Content Include="img\property_1.jpg" />
     <Content Include="img\property_2.jpg" />
     <Content Include="img\property_3.jpg" />
