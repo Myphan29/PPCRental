@@ -341,7 +341,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #323232;
   text-decoration: underline;
 }
 
@@ -4662,6 +4662,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+
 }
 
 .pagination > li:first-child > a,
@@ -4681,7 +4682,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: #eeeeee;
+  background-color: black;
 }
 
 .pagination > .active > a,
@@ -4693,8 +4694,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 2;
   color: #ffffff;
   cursor: default;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: grey;
+  border-color: grey;
 }
 
 .pagination > .disabled > span,

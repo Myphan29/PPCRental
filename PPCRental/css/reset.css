@@ -52,13 +52,13 @@
         font-size:100%;
         vertical-align:baseline;
         background:transparent;
-        color: #ffffff;
+        color:#000000;
     }
 
     /* change colours to suit your needs */
     ins {
         background-color:#ff9;
-        color:#000;
+        color:#000000;
         text-decoration:none;
     }
 

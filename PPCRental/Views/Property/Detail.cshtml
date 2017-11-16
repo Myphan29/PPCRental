@@ -1,180 +1,195 @@
 ﻿@model PPCRental.Models.PROPERTY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="pixelhint.com">
+    <meta name="description" content="La casa free real state fully responsive html5/css3 home page website template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/responsive.css">
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/main.js"></script>
+</head>
+<body>
+    <div>
+        <h1> PROPERTY</h1>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.PropertyName)
+            </dt>
 
-<div>
-    <h4>PROPERTY</h4>
-	<hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.PropertyName)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PropertyName)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PropertyName)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Avatar)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Avatar)
-        </dt>
+            <dd>
+                <img src="/img/property/@Model.Avatar" />
+            </dd>
 
-        <dd>
-            <img src="/Images/@Model.Avatar" />
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Images)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Images)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Images)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Images)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PropertyType_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PropertyType_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PropertyType_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PropertyType_ID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Street_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Street_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Street_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Street_ID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Ward_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Ward_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Ward_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Ward_ID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.District_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.District_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.District_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.District_ID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UnitPrice)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UnitPrice)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.UnitPrice)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Area)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Area)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Area)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Area)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BedRoom)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BedRoom)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BedRoom)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BedRoom)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BathRoom)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BathRoom)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BathRoom)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BathRoom)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PackingPlace)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PackingPlace)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PackingPlace)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PackingPlace)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.UserID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UserID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UserID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.UserID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Created_at)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Created_at)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Created_at)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Created_at)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Create_post)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Create_post)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Create_post)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Create_post)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Status_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Status_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Status_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Status_ID)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Note)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Note)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Note)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Note)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Updated_at)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Updated_at)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Updated_at)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Updated_at)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Sale_ID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Sale_ID)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Sale_ID)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Sale_ID)
-        </dd>
+        </dl>
+    </div>
+    <!--Tag return home page-->
+    <p>
+        @Html.ActionLink("Back to Home Page", "Index", "Home")
+    </p>
+</body>
+</html>
 
-    </dl>
-</div>
-<!--Tag return home page-->
-<p>
-    @Html.ActionLink("Back to Home Page", "Index", "Home")
-</p>
