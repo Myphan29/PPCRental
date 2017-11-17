@@ -97,3 +97,40 @@
     input, select {
         vertical-align:middle;
     }
+    .require {
+    color: #666;
+    }
+
+    label small {
+    color: #999;
+    font-weight: normal;
+    }
+    .container {
+    text-align:center;
+    margin:auto;
+    width:100%;
+
+    }
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+    .form-group{
+    
+    margin:auto;
+
+    }
+    element.style{
+    font-size:100%;
+
+    }
+    textarea{
+        max-width:100%;
+        margin: 8px 0;
+    }
+   

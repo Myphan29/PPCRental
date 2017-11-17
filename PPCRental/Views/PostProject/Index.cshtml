@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="pixelhint.com">
+    <meta name="description" content="La casa free real state fully responsive html5/css3 home page website template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/responsive.css">
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <h1>Post Project</h1>
+
+                <form action="" method="POST">
+
+                    <div class="form-group has-error">
+                        <label for="Property Name">Property Name <span class="require">*</span> <small>(This field is your name Project.)</small></label>
+                        <input type="text" class="form-control" name="slug" />
+                        <span class="help-block">Field not entered!</span>
+                    </div>
+                    <div class="form-select">
+                        <label for="Property Type">Property Type <span class="require">*</span> <small></label>
+                        <select>
+                            <option value="For Rent">For Rent </option>
+                            <option value="For Sell">For Sell</option>
+                        </select>
+                    </div>
+                    <div class="form-select 1"><br />
+                        <label for="District">District <span class="require">*</span> <small></label>
+                        <select>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                            <option value="11">11</option>
+                            <option value="12">12 </option>
+                            <option value="Binh Tan">Binh Tan </option>
+                            <option value="Binh Thanh">Binh Thanh </option>
+                            <option value="Go Vap">Go Vap </option>
+                            <option value="Phu Nhuan">Phu Nhuan </option>
+                            <option value="Thu Duc">Thu Duc </option>
+                            <option value="Tan Binh">Tan Binh </option>
+                            <option value="Tan Phu">Tan Phu </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Title <span class="require">*</span></label>
+                        <input type="text" class="form-control" name="title" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea rows="5" class="form-control" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <p><span class="require">*</span> - required fields</p>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            Post
+                        </button>
+                        <button class="btn btn-default">
+                            Cancel
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
