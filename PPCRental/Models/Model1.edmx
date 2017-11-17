@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PPCRentalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ppcrental3130Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="DISTRICT">
           <Key>
             <PropertyRef Name="ID" />
@@ -236,7 +236,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="PPCRentalModelStoreContainer">
+        <EntityContainer Name="ppcrental3130ModelStoreContainer">
           <EntitySet Name="DISTRICT" EntityType="Self.DISTRICT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FEATURE" EntityType="Self.FEATURE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" Schema="dbo" store:Type="Tables" />
@@ -295,7 +295,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="PPCRentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="ppcrental3130Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="DISTRICT">
           <Key>
             <PropertyRef Name="ID" />
@@ -549,7 +549,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="PPCRentalDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="PPCRentalEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="DISTRICTs" EntityType="Self.DISTRICT" />
           <EntitySet Name="FEATUREs" EntityType="Self.FEATURE" />
           <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" />
@@ -609,9 +609,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PPCRentalModelStoreContainer" CdmEntityContainer="PPCRentalDBEntities">
+        <EntityContainerMapping StorageEntityContainer="ppcrental3130ModelStoreContainer" CdmEntityContainer="PPCRentalEntities">
           <EntitySetMapping Name="DISTRICTs">
-            <EntityTypeMapping TypeName="PPCRentalModel.DISTRICT">
+            <EntityTypeMapping TypeName="ppcrental3130Model.DISTRICT">
               <MappingFragment StoreEntitySet="DISTRICT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
@@ -620,7 +620,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FEATUREs">
-            <EntityTypeMapping TypeName="PPCRentalModel.FEATURE">
+            <EntityTypeMapping TypeName="ppcrental3130Model.FEATURE">
               <MappingFragment StoreEntitySet="FEATURE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
@@ -629,7 +629,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROJECT_STATUS">
-            <EntityTypeMapping TypeName="PPCRentalModel.PROJECT_STATUS">
+            <EntityTypeMapping TypeName="ppcrental3130Model.PROJECT_STATUS">
               <MappingFragment StoreEntitySet="PROJECT_STATUS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
@@ -638,7 +638,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTies">
-            <EntityTypeMapping TypeName="PPCRentalModel.PROPERTY">
+            <EntityTypeMapping TypeName="ppcrental3130Model.PROPERTY">
               <MappingFragment StoreEntitySet="PROPERTY">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
@@ -666,7 +666,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTY_FEATURE">
-            <EntityTypeMapping TypeName="PPCRentalModel.PROPERTY_FEATURE">
+            <EntityTypeMapping TypeName="ppcrental3130Model.PROPERTY_FEATURE">
               <MappingFragment StoreEntitySet="PROPERTY_FEATURE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Property_ID" ColumnName="Property_ID" />
@@ -675,7 +675,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTY_TYPE">
-            <EntityTypeMapping TypeName="PPCRentalModel.PROPERTY_TYPE">
+            <EntityTypeMapping TypeName="ppcrental3130Model.PROPERTY_TYPE">
               <MappingFragment StoreEntitySet="PROPERTY_TYPE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CodeType" ColumnName="CodeType" />
@@ -685,7 +685,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="STREETs">
-            <EntityTypeMapping TypeName="PPCRentalModel.STREET">
+            <EntityTypeMapping TypeName="ppcrental3130Model.STREET">
               <MappingFragment StoreEntitySet="STREET">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="StreetName" ColumnName="StreetName" />
@@ -695,7 +695,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="USERs">
-            <EntityTypeMapping TypeName="PPCRentalModel.USER">
+            <EntityTypeMapping TypeName="ppcrental3130Model.USER">
               <MappingFragment StoreEntitySet="USER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
@@ -709,7 +709,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WARDs">
-            <EntityTypeMapping TypeName="PPCRentalModel.WARD">
+            <EntityTypeMapping TypeName="ppcrental3130Model.WARD">
               <MappingFragment StoreEntitySet="WARD">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="WardName" ColumnName="WardName" />

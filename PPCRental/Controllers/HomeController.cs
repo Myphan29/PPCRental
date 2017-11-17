@@ -12,7 +12,7 @@ namespace PPCRental.Controllers
     public class HomeController : Controller
     {
       
-        PPCRentalDBEntities model = new PPCRentalDBEntities();
+        PPCRentalEntities model = new PPCRentalEntities();
 
         public ActionResult Index()
         {

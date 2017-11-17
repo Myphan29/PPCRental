@@ -9,7 +9,7 @@ namespace PPCRental.Controllers
 {
     public class PropertyController : Controller
     {
-        PPCRentalDBEntities model = new PPCRentalDBEntities();
+        PPCRentalEntities model = new PPCRentalEntities();
         // GET: /Property/
         public ActionResult Detail(int id)
         {
