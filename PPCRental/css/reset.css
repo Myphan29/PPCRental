@@ -106,9 +106,10 @@
     font-weight: normal;
     }
     .container {
-    text-align:center;
     margin:auto;
     width:100%;
+    text-align:left;
+
 
     }
     input[type=text], select {
@@ -132,5 +133,9 @@
     textarea{
         max-width:100%;
         margin: 8px 0;
+        max-height:initial;
+    }
+    form-control{
+
     }
    
