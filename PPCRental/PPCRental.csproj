@@ -171,6 +171,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PropertyController.cs" />
+    <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -343,6 +344,9 @@
     <Content Include="Views\Property\Detail.cshtml" />
     <Content Include="Views\Home\_PartialViewProperty.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Sale\Getpaging.cshtml" />
+    <Content Include="Views\Sale\Index.cshtml" />
+    <Content Include="Views\Sale\_LayoutSale.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

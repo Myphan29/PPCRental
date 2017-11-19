@@ -1,0 +1,27 @@
+﻿@model PagedList.IPagedList<PPCRental.Models.PROPERTY>
+@using PagedList.Mvc;
+
+@foreach (var item in Model)
+{
+    <li>
+        <a href="/Property/Detail/@item.ID">
+            <img src="~/img/property/@item.Avatar" alt="" title="" class="property_img" />
+        </a>
+        <span class="price">Status: @item.Status_ID</span>
+        <div class="property_details">
+            <h1>
+                <a href="/Property/Detail/@item.ID">@item.PropertyName</a>
+            </h1>
+            <h2>@item.Content.Substring(0, 100)... @*<span class="property_size">(288ftsq)</span>*@</h2>
+        </div>
+    </li>
+}
+<li class=" pagenumber">
+    @Html.PagedListPager(Model, page => Url.Action("Getpaging", new { page }),
+  PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "property" }))
+</li>
+
+
+
+
+
