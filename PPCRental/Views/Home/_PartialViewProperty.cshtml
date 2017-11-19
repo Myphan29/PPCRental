@@ -5,7 +5,6 @@
 @foreach (var item in Model)
 {
     <li>
-
         <a href="/Property/Detail/@item.ID">
             <img src="~/img/property/@item.Avatar" alt="" title="" class="property_img" />
         </a>
@@ -17,22 +16,16 @@
             <h2>
                 @item.Content.Substring(0, 80)... @*<span class="property_size">(288ftsq)</span>*@
                 <br />
-                <p style="font-size:20px">
-                    <i class='fa fa-bath'></i>@item.BathRoom
-                    <i class='fa fa-bed'></i>@item.BedRoom
-                    <i class='fa fa-car'></i>@item.PackingPlace
+                <p style="font-size:15px">
+                    <i class='fa fa-bath'></i>&ensp;@item.BathRoom&ensp;
+                    <i class='fa fa-bed'></i>&ensp;@item.BedRoom&ensp;
+                    <i class='fa fa-car'></i>&ensp;@item.PackingPlace&ensp;
                 </p>
             </h2>
-
-
-
-
-
         </div>
     </li>
 }
 <li class=" pagenumber">
-
     @Html.PagedListPager(Model, page => Url.Action("Getpaging", new { page }),
   PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "property" }))
 </li>

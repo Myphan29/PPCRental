@@ -122,31 +122,31 @@ h5, h6          { font-weight: bolder }
 header{
     width: 100%;
     height: 100px;
-    background: grey;
-    opacity:0.5;
+    background: #323232;
+    opacity: 0.7;
     position: absolute;
     z-index: 1;
 }
 
 header .logo{
-    margin-top: 40px;
+    margin-top: 35px;
     float: left;
 }
 
-header a.hamburger{
-    text-decoration: none;
-    display: none;
-    float: right;
-    margin-top: 41px;
-    width: 24px;
-    height: 19px;
-    background: url('../img/hamburger_icon.png') no-repeat;
-}
+    header a.hamburger {
+        text-decoration: none;
+        display: none;
+        float: right;
+        margin-top: 41px;
+        width: 24px;
+        height: 19px;
+        background: url('../img/res/hamburger_icon.png') no-repeat;
+    }
 
-header a.hamburger.opned{
-    width: 19px;
-    background: url('../img/close_menu_icon.png') no-repeat;
-}
+        header a.hamburger.opned {
+            width: 19px;
+            background: url('../img/res/close_menu_icon.png') no-repeat;
+        }
 
 
 header nav{
@@ -213,11 +213,11 @@ header nav .login_btn:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-.hero{
+.hero {
     width: 100%;
     height: 900px;
     position: relative;
-    background: url('../img/hero.jpg') no-repeat bottom center;
+    background: url('../img/res/hero.jpg') no-repeat bottom center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -281,7 +281,6 @@ header nav .login_btn:hover{
     color: #ffffff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 22px;
 }
@@ -306,27 +305,25 @@ header nav .login_btn:hover{
     display: none;
 }
 
-.search .advanced_search_icon{
-    display: block;
-    width: 26px;
-    height: 26px;
-    float: right;
-    background: url('../img/advanced_search_inactive.png') no-repeat;
-    margin-top: 37px;
+    .search .advanced_search_icon {
+        display: block;
+        width: 26px;
+        height: 26px;
+        float: right;
+        background: url('../img/res/advanced_search_inactive.png') no-repeat;
+        margin-top: 37px;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -o-transition: all .2s linear;
+    }
+        .search .advanced_search_icon:hover {
+            background: url('../img/res/advanced_search_hover.png') no-repeat;
+        }
 
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-}
-
-.search .advanced_search_icon:hover{
-    background: url('../img/advanced_search_hover.png') no-repeat;
-}
-
-.search .advanced_search_icon.active{
-    background: url('../img/advanced_search_active.png') no-repeat;
-}
+        .search .advanced_search_icon.active {
+            background: url('../img/res/advanced_search_active.png') no-repeat;
+        }
 
 
 
@@ -340,21 +337,21 @@ header nav .login_btn:hover{
     top: 100px;
     left: 0;
     background: #323232;
-    border-top: 1px solid #aac8e4;
-    border-bottom: 1px solid #aac8e4;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     z-index: 9999;
     display: none;
 }
 
-.search .advanced_search .arrow{
-    display: block;
-    width: 14px;
-    height: 9px;
-    background: url('../img/search_arrow.png') no-repeat;
-    position: absolute;
-    top: -8px;
-    right: 6px;
-}
+    .search .advanced_search .arrow {
+        display: block;
+        width: 14px;
+        height: 9px;
+        background: url('../img/res/search_arrow.png') no-repeat;
+        position: absolute;
+        top: -8px;
+        right: 6px;
+    }
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date,
@@ -370,13 +367,13 @@ header nav .login_btn:hover{
     background: #323232;
 }
 
-.search .advanced_search #check_in_date,
-.search .advanced_search #check_out_date{
-    background: url('../img/calendar_icon.png') no-repeat;
-    background-position: 484px 50%;
-    padding: 0 100px 0 20px;
-    width: 429px;
-}
+    .search .advanced_search #check_in_date,
+    .search .advanced_search #check_out_date {
+        background: url('../img/res/calendar_icon.png') no-repeat;
+        background-position: 484px 50%;
+        padding: 0 100px 0 20px;
+        width: 429px;
+    }
 
 .search .advanced_search .float{
     float: left;
@@ -384,7 +381,7 @@ header nav .login_btn:hover{
 
 .search .advanced_search .search_fields{
     overflow: hidden;
-    border-bottom: 1px solid #aac8e4;
+    border-bottom: 1px solid #ffffff;
 }
 
 .search .advanced_search .field_sep{
@@ -416,7 +413,6 @@ header nav .login_btn:hover{
     color: #ffffff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 22px;
 } 
@@ -427,7 +423,7 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price::-webkit-input-placeholder,
 .search .advanced_search #max_price::-webkit-input-placeholder,
 .search .advanced_search #keywords::-webkit-input-placeholder{
-   color: #95badf;
+   color: #ffffff;
 }
 
 .search .advanced_search #check_in_date:-moz-placeholder, 
@@ -435,7 +431,7 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price:-moz-placeholder, 
 .search .advanced_search #max_price:-moz-placeholder, 
 .search .advanced_search #keywords:-moz-placeholder{ 
-   color: #95badf;  
+   color: #ffffff;  
 }
 
 .search .advanced_search #check_in_date::-moz-placeholder, 
@@ -443,7 +439,7 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price::-moz-placeholder, 
 .search .advanced_search #max_price::-moz-placeholder, 
 .search .advanced_search #keywords::-moz-placeholder{ 
-   color: #95badf;  
+   color: #ffffff;  
 }
 
 .search .advanced_search #check_in_date:-ms-input-placeholder,  
@@ -451,7 +447,7 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price:-ms-input-placeholder,  
 .search .advanced_search #max_price:-ms-input-placeholder,  
 .search .advanced_search #keywords:-ms-input-placeholder{  
-   color: #95badf;  
+   color: #ffffff;  
 } 
 
 
@@ -665,9 +661,9 @@ footer ul li.about > ul > li:last-child{
     margin-right: 0;
 }
 
-footer ul li.about > ul > li a{
-    background: url('../img/social_media.png') no-repeat;
-}
+    footer ul li.about > ul > li a {
+        background: url('../img/res/social_media.png') no-repeat;
+    }
 
 footer ul li.about > ul > li a.facebook{
     display: block;
@@ -749,8 +745,8 @@ footer .copyrights a.ph_link{
     }
 
     .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date{
-        background: url('../img/calendar_icon.png') no-repeat;
+    .search .advanced_search #check_out_date {
+        background: url('../img/res/calendar_icon.png') no-repeat;
         background-position: 95.08840864440079% 50%;
     }
 
@@ -912,8 +908,8 @@ footer .copyrights a.ph_link{
     }
 
     .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date{
-        background: url('../img/calendar_icon.png') no-repeat;
+    .search .advanced_search #check_out_date {
+        background: url('../img/res/calendar_icon.png') no-repeat;
         background-position: 95.08840864440079% 50%;
     }
 

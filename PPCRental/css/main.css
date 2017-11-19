@@ -288,26 +288,25 @@ header nav .login_btn:hover{
     display: none;
 }
 
-.search .advanced_search_icon{
-    display: block;
-    width: 26px;
-    height: 26px;
-    float: right;
-    background: url('../img/advanced_search_inactive.png') no-repeat;
-    margin-top: 37px;
-
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-}
+    .search .advanced_search_icon {
+        display: block;
+        width: 26px;
+        height: 26px;
+        float: right;
+        background: url('../img/res/advanced_search_inactive.png') no-repeat;
+        margin-top: 37px;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -o-transition: all .2s linear;
+    }
 
 .search .advanced_search_icon:hover{
-    background: url('../img/advanced_search_hover.png') no-repeat;
+    background: url('../img/res/advanced_search_hover.png') no-repeat;
 }
 
 .search .advanced_search_icon.active{
-    background: url('../img/advanced_search_active.png') no-repeat;
+    background: url('../img/res/advanced_search_active.png') no-repeat;
 }
 
 
@@ -326,15 +325,15 @@ header nav .login_btn:hover{
     display: none;
 }
 
-.search .advanced_search .arrow{
-    display: block;
-    width: 14px;
-    height: 9px;
-    background: url('../img/search_arrow.png') no-repeat;
-    position: absolute;
-    top: -8px;
-    right: 6px;
-}
+    .search .advanced_search .arrow {
+        display: block;
+        width: 14px;
+        height: 9px;
+        background: url('../img/res/search_arrow.png') no-repeat;
+        position: absolute;
+        top: -8px;
+        right: 6px;
+    }
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date,

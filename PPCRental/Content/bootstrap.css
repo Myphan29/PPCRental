@@ -341,7 +341,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #323232;
+  color: #2a6496;
   text-decoration: underline;
 }
 
@@ -1996,7 +1996,26 @@ textarea.input-lg {
     text-align: right;
   }
 }
+.custom-btn {
+    border: 2px solid #ffffff;
+    background: transparent;
+    transition: background .1s linear;
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -o-transition: background .1s linear;
+    width: 150px;
+    height: 45px;
+    color: #ffffff;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 620px;
+    margin-top: 28px;
 
+}
+    .custom-btn:hover {
+        background: #ffffff;
+        color: #1c3655;
+    }
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -4662,7 +4681,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-
 }
 
 .pagination > li:first-child > a,
@@ -4682,7 +4700,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: black;
+  background-color: #eeeeee;
 }
 
 .pagination > .active > a,
@@ -4694,8 +4712,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 2;
   color: #ffffff;
   cursor: default;
-  background-color: grey;
-  border-color: grey;
+  background-color: #428bca;
+  border-color: #428bca;
 }
 
 .pagination > .disabled > span,
@@ -6011,8 +6029,8 @@ body.modal-open,
 .carousel-inner {
   position: relative;
   width: 100%;
-  max-height: 900px;
   overflow: hidden;
+  height: 900px;
 }
 
 .carousel-inner > .item {
@@ -6028,6 +6046,7 @@ body.modal-open,
   height: auto;
   max-width: 100%;
   line-height: 1;
+  margin: 0 auto;
 }
 
 .carousel-inner > .active,

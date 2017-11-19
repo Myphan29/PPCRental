@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PPCRental",
+    "\\PPCRental\\Views",
+    "\\PPCRental\\Views\\Home",
+    "\\PPCRental\\Views\\Shared"
   ],
-  "SelectedNode": "\\PPCRental.sln",
+  "SelectedNode": "\\PPCRental\\Views\\Home\\Search.cshtml",
   "PreviewInSolutionExplorer": false
 }

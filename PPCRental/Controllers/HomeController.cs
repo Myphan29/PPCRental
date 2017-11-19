@@ -45,8 +45,7 @@ namespace PPCRental.Controllers
         [HttpGet]
         public ActionResult Search(string text)
         {
-            var property= model.PROPERTies.ToList().Where(x => x.PropertyName.Contains(text)
-                || x.Content.Contains(text) || x.Price.ToString().Contains(text));
+            var property = model.PROPERTies.ToList().Where(x =>  x.PropertyName.Contains(text) || x.Content.Contains(text) || x.Price.ToString().Contains(text));
             return View(property);
 
         }

@@ -224,6 +224,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\bootstrap.css.bak" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\PagedList.css" />
@@ -239,15 +240,20 @@
     <Content Include="fonts\p22_corinthia.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="img\advanced_search_active.png" />
-    <Content Include="img\advanced_search_hover.png" />
-    <Content Include="img\advanced_search_inactive.png" />
-    <Content Include="img\calendar_icon.png" />
-    <Content Include="img\close_menu_icon.png" />
-    <Content Include="img\hamburger_icon.png" />
-    <Content Include="img\hero.jpg" />
-    <Content Include="img\hero_small.jpg" />
-    <Content Include="img\logo1.png" />
+    <Content Include="img\res\advanced_search_active.png" />
+    <Content Include="img\res\advanced_search_hover.png" />
+    <Content Include="img\res\advanced_search_inactive.png" />
+    <Content Include="img\res\calendar_icon.png" />
+    <Content Include="img\res\close_menu_icon.png" />
+    <Content Include="img\res\hamburger_icon.png" />
+    <Content Include="img\res\hero.jpg" />
+    <Content Include="img\res\hero_small.jpg" />
+    <Content Include="img\res\logo1.png" />
+    <Content Include="img\res\property_1.jpg" />
+    <Content Include="img\res\property_2.jpg" />
+    <Content Include="img\res\property_3.jpg" />
+    <Content Include="img\res\search_arrow.png" />
+    <Content Include="img\res\social_media.png" />
     <Content Include="img\property\IMG_1592-stamp.jpg" />
     <Content Include="img\property\PIS3280-Edit-stamp.jpg" />
     <Content Include="img\property\PIS3611.jpg" />
@@ -258,16 +264,11 @@
     <Content Include="img\property\PIS_7389-Edit-stamp.jpg" />
     <Content Include="img\property\PIS_7432-Edit-stamp.jpg" />
     <Content Include="img\property\sunshine-benthanh-cityhome-10-stamp.jpg" />
-    <Content Include="img\property_1.jpg" />
-    <Content Include="img\property_2.jpg" />
-    <Content Include="img\property_3.jpg" />
-    <Content Include="img\search_arrow.png" />
     <Content Include="img\sld\p1.jpg" />
     <Content Include="img\sld\p2.jpg" />
     <Content Include="img\sld\p3.jpg" />
     <Content Include="img\sld\p4.jpg" />
     <Content Include="img\sld\p5.jpg" />
-    <Content Include="img\social_media.png" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
     <Content Include="Scripts\bootstrap.js" />
