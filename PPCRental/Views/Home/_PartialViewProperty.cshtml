@@ -6,7 +6,7 @@
 {
     <li>
 
-        <a href="#">
+        <a href="/Property/Detail/@item.ID">
             <img src="~/img/property/@item.Avatar" alt="" title="" class="property_img" />
         </a>
         <span class="price">@item.Price VND</span>
@@ -14,12 +14,25 @@
             <h1>
                 <a href="/Property/Detail/@item.ID">@item.PropertyName</a>
             </h1>
-            <h2>@item.Content.Substring(0,100)... @*<span class="property_size">(288ftsq)</span>*@</h2>
+            <h2>
+                @item.Content.Substring(0, 80)... @*<span class="property_size">(288ftsq)</span>*@
+                <br />
+                <p style="font-size:20px">
+                    <i class='fa fa-bath'></i>@item.BathRoom
+                    <i class='fa fa-bed'></i>@item.BedRoom
+                    <i class='fa fa-car'></i>@item.PackingPlace
+                </p>
+            </h2>
+
+
+
+
+
         </div>
     </li>
 }
 <li class=" pagenumber">
-   
+
     @Html.PagedListPager(Model, page => Url.Action("Getpaging", new { page }),
   PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "property" }))
 </li>
