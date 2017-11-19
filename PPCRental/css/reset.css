@@ -120,6 +120,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    border-spacing:2px;
 }
     .form-group{
     
@@ -133,9 +134,8 @@
     textarea{
         max-width:100%;
         margin: 8px 0;
-        max-height:initial;
+        resize:none;
     }
     form-control{
 
     }
-   
