@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="pixelhint.com">
+    <meta name="description" content="La casa free real state fully responsive html5/css3 home page website template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/responsive.css">
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/main.js"></script>
+    <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+                
+                <h1>Post Project</h1>
+
+                <form action="" method="POST">
+
+                    <div class="form-group">
+                        <label for="Property Name">Property Name <span class="require">*</span></label>
+                        <input type="text" class="form-control" name="slug" required pattern="[A-Za-z\s]{5,20}" title="Name your project, from 5 to 20 character" placeholder="Your project name" />
+                    </div>
+                    <div class="form-select">
+                        <label for="Property Type">Property Type <span class="require">*</span> <small></label>
+                        <select>
+                            <option value="For Rent">For Rent </option>
+                            <option value="For Sell">For Sell</option>
+                        </select>
+                    </div>
+                    <div class="form-select 1"><br />
+                        <label for="District">District <span class="require">*</span> <small></label>
+                        <select>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                            <option value="11">11</option>
+                            <option value="12">12 </option>
+                            <option value="Binh Tan">Binh Tan </option>
+                            <option value="Binh Thanh">Binh Thanh </option>
+                            <option value="Go Vap">Go Vap </option>
+                            <option value="Phu Nhuan">Phu Nhuan </option>
+                            <option value="Thu Duc">Thu Duc </option>
+                            <option value="Tan Binh">Tan Binh </option>
+                            <option value="Tan Phu">Tan Phu </option>
+                        </select>
+                    </div>
+
+                    <div class="form-select 1"></br>
+                        <label for="Ward">Ward <span class="require">*</span> <small></label>
+                        <input type="text" class="form-control" name="Ward" required pattern="[A-Za-z0-9\s]{1,20}" title="Input your Ward" placeholder="Your house ward name"/>
+                    </div>
+
+                    <div class="form-select 1">
+                        </br>
+                        <label for="Street">Street <span class="require">*</span> <small></label>
+                        <input type="text" class="form-control" required name="Street" pattern="[A-Za-z\s]{5,25}"title="Input invalid"placeholder="Your house street name" />
+                    </div>
+
+                    <div class="form-select 1">
+                        </br>
+                        <label for="Num of bed room">Num of bed room <span class="require">*</span> <small></label>
+                        <input type="text" class="form-control" required name="Num of bed room" pattern="[0-9]{1,2}"title="Input Invalid" placeholder="Number of Bedroom" />
+                    </div>
+
+                    <div class="form-select 1">
+                        </br>
+                        <label for="Num of bath room">Num of bath room <span class="require">*</span> <small></label>
+                        <input type="text" class="form-control" required name="Num of bath room" pattern="[0-9]{1,2}"title="Input Invalid" placeholder="Number of Bathroom" />
+                    </div>
+
+                    <div class="form-select 1">
+                        </br>
+                        <label for="Num of Parking Place">Num of Parking Place<span class="require">*</span> <small></label>
+                        <input type="text" class="form-control" required name="Num of Parking Place" pattern="[0-9]{1,2}"title="Input Invalid" placeholder="Number of Paking Place"/>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="Price">Price <span class="require">*</span></label>
+                            <input type="text" required class="form-control" name="Price" pattern="[0-9]{3,6}"title="Input Invalid" placeholder="House Price"/>
+                        </div>
+
+                    <div class="form-group">
+                        <label for="Unit">Unit <span class="require">*</span></label>
+                        <select>
+                            <option>USD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Area">Area <span class="require">*</span></label>
+                        <input type="text" required class="form-control" name="Area" pattern="[0-9]{2,3}"title="Input Invalid" placeholder="House Area"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Feature">Feature 1 </label>
+                        <input type="text" class="form-control" name="Feature 1" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Feature">Feature 2 </label>
+                        <input type="text" class="form-control" name="Feature 2" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Feature">Feature 3 </label>
+                        <input type="text" class="form-control" name="Feature 3" />
+                    </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea rows="5" class="form-control" name="description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <p><span class="require">*</span> - required fields</p>
+                        </div>
+
+                        <div class="right">
+                            <button type="submit" class="btn btn-primary">
+                                Post
+                            </button>
+                            <button class="btn btn-default">
+                                Cancel
+                            </button>
+                        </div>
+
+</form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
